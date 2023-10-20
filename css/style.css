@@ -306,3 +306,10 @@ nav li.current, nav ul li:active{
 
 }
 
+@media (prefers-reduced-motion){
+    .gif{
+        display: none;
+    }
+
+}
+
