@@ -16,7 +16,8 @@ body{
     position: relative;
     background-color: #f8f0fc;
     color: #1e0121;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 header{
     border-bottom: 2px solid #E4582C;
@@ -53,9 +54,37 @@ nav{
     margin-bottom: 50px;
     border-bottom: 2px solid #E4582C;
   }
+
+  .intro_travel{
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: #E4582C;
+    height: auto;                /* Parallax effect */
+    background-image: url(../images/header_travel.png);
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #E4582C;
+
+  
+
+  }
+  .intro_recipes{
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: #E4582C;
+    height: auto;                /* Parallax effect */
+    background-image: url(../images/header_recipe.png);
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #E4582C;
+  }
   
   
-  .intro_pets p{
+  .intro_pets p, .intro_travel p, .intro_recipes p{
     /* color: #E4582C; */
     /* background-color: #f0ebf4; */
     font-size: 1.5em;
@@ -108,10 +137,12 @@ h2{
     font-weight: bold;
     font-size: 2em;
     margin-bottom: 25px;
+    margin-left: 10px;
 }
 h3{
     font-size: 1.5em;
     margin-bottom: 25px;
+    margin-left: 10px;
 
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(124, 8, 95); */
@@ -150,6 +181,7 @@ li{
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
+    text-align: center;
     
     /* margin-top: 10px;
     padding-top: 10px; */
@@ -212,6 +244,11 @@ nav li.current, nav ul li:active{
     justify-content: center;
     /* border-bottom: 2px solid #E4582C; */
 }
+/* .pets_grid h1, .pets_grid h2, .pets_grid p{
+    margin:0;
+} */
+
+
 
 .intro_pets{
     background-repeat: no-repeat;
