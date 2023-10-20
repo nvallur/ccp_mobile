@@ -37,6 +37,9 @@ nav{
 
 
 }
+.intro{
+    text-align: center;
+}
 /* PARALLAX INTRO */
 .intro_pets{
     background-attachment: fixed; /* Parallax effect */     
@@ -100,10 +103,16 @@ h1 {
     letter-spacing: .2em;
 }
 
-
-h2, h3{
+h2{
+    color:#E4582C;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+h3{
     font-size: 1.5em;
     margin-bottom: 25px;
+
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(124, 8, 95); */
 }
@@ -120,6 +129,17 @@ img{
     border-radius: 15px;
     /* border-top-right-radius: 30px; */
 }
+video{
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    max-height: 500px;
+}
+img:hover, video:hover, img:focus, video:focus{
+    border: 2px solid #E4582C;
+    transform: scale(1.2);
+    z-index: 100;
+}
 
 
 
@@ -127,8 +147,10 @@ img{
 
 
 li{
-    /* display: inline-block; */
-    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    
     /* margin-top: 10px;
     padding-top: 10px; */
    
@@ -188,19 +210,22 @@ nav li.current, nav ul li:active{
     grid-row-gap: 20px;
     margin-bottom: 50px;
     justify-content: center;
+    /* border-bottom: 2px solid #E4582C; */
 }
+
 .intro_pets{
     background-repeat: no-repeat;
     grid-column: 1/-1;
+    border: none;
 }
-.item_1, .item_2, .item_3, .item_4{
+.item_1, .item_2, .item_3, .item_4, .item_5, .item_6{
     grid-column: 1/-1;
 }
 .item_1{
     grid-row-start: 1;
     /* grid-column: 1/-1; */
     text-align: center;
-    overflow: auto;
+    overflow: scroll;
 }
 .item_2{
     grid-row-start: 2;
@@ -212,12 +237,55 @@ nav li.current, nav ul li:active{
     text-align: center;
     overflow: auto;
 }
+.item_3{
+    grid-row-start: 3;
+}
+.item_4{
+    grid-row-start: 4;
+}
+.item_5{
+    /* grid-row-start: -2; */
+    text-align: center;
+
+}
+.item_7{
+    grid-row-start: -1;
+    text-align: center;
+    overflow: auto;
+}
+
+/* RECIPE GRID */
+.recipe_grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+/* FLEX STYLING FOR IMAGE GALLERY */
+
+.img_gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 5;
+    grid-column: 1/-1;
+}
+
+.pet_table_contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
 
+.pet_table_contents img:hover, .pet_table_contents img:focus{
+    background-color: #E4582C;
 
-
-
-
+}
 
 
 
